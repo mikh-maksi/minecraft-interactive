@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #meet{
+            height:800px;
+            width: 1423px;
+        }
+        #base{
+            display: flex;
+            justify-content: center;
+
+            position: relative;
+        }
+        #a1{
+            width: 40px;
+            height:40px;
+            background-color: rgba(255, 0, 255, 0.2);
+            border-radius: 20px;
+            display: block;
+            position: absolute;
+            bottom: 15px;
+            left:780px;
+            cursor:pointer;
+        }
+        #on{
+            width: 260px;
+            height:179px;
+            position: absolute;
+            bottom: 60px;
+            left:780px;
+            cursor:pointer;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id = "base">
+        <img src="./img/meet_back.jpg" id = 'meet'>
+        <div id = "a1" title = "Демонстрация экрана"></div>
+        <div id = "on" title = "Демонстрация экрана"><img src="./img/meet_on.jpg" alt=""></div>
+
+    </div>
+    <script>
+        a1.addEventListener("click",a1fnc);
+        function a1fnc(){
+            on.style.display = "block";
+            console.log("ok");
+
+        }
+    </script>
+</body>
+</html>
